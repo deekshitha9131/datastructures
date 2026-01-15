@@ -16,3 +16,7 @@ if __name__ == "__main__":
 #         temp = arr[i]
 #         arr[i] = arr[n-1-i]
 #         arr[n-1-i] = temp     
+
+# rev = arr[::-1]
+
+# arr.reverse()
