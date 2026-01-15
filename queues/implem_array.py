@@ -1,6 +1,5 @@
 # FIFO
 # first in first out
-
 class Queue:
     def __init__(self,capacity):
         self.queue = [None]*capacity
