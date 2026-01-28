@@ -1,8 +1,9 @@
+# subarray with maximum sum
 def maxSubArray(arr):
     result = arr[0]
     n = len(arr)
     for i in range(n):
-        currSum = 0
+        currSum = 0    #currSum is always updated to 0
         for j in range (i,n):
             currSum += arr[j]
             if currSum > result:
