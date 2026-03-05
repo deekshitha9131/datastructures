@@ -1,4 +1,5 @@
   BFS         DFS 
+FIFO          LIFO
 Queue         Stack
 level         depth
 shortest      not shortest

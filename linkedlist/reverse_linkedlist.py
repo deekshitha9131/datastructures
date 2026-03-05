@@ -1,14 +1,20 @@
 class Node:
-    def __init__(self,newData):
-        self.data=newData
+    def __init__(self,data):
+        self.data=data
         self.next=None
 def reverseList(head):
     temp = head
     prev = None
     while temp is not None:
+        print("Before reversing:")
+        print("prev=",prev.data if prev else None)
+        print("temp=",temp.data)
+        print("temp.next=",temp.next.data if temp.next else None)
         nextNode = temp.next
-        temp.next = prev
-
+        temp.next = prev  #reverse
+        print("After reversing:")
+        print("NextNode=",nextNode.data if nextNode else None)
+        print("temp.next=",temp.next.data if temp.next else None)
         prev = temp
         temp = nextNode
     return prev
@@ -29,5 +35,3 @@ if __name__ == "__main__":
     head.next.next.next.next = Node(5)
     head = reverseList(head)
     printList(head)
-
-    input("\nPress Enter to close...")
