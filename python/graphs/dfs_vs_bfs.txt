@@ -1,7 +1,0 @@
-  BFS         DFS 
-FIFO          LIFO
-Queue         Stack
-level         depth
-shortest      not shortest
-more mem      less mem
-complex       simple implementation
